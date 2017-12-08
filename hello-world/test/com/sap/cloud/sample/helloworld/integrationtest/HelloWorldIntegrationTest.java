@@ -56,6 +56,6 @@ public class HelloWorldIntegrationTest {
         // Call servlet
         request = new GetMethodWebRequest(serverUrl + "/hello-world/");
         response = wc.getResponse(request);
-        Assert.assertThat(response.getText(), containsString("Hello World"));
+        Assert.assertThat(response.getText(), containsString("Hello Sunny"));
     }
 }
