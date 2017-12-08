@@ -672,6 +672,7 @@
 		</configuration>
               </execution>
             </executions>
+		  
 	    <configuration>
               <skip>${skipIntegrationTests}</skip>
               <sdkInstallPath>${sap.cloud.sdk.path}</sdkInstallPath>
