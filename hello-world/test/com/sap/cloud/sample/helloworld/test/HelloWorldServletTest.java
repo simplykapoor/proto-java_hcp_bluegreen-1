@@ -41,7 +41,7 @@ public class HelloWorldServletTest {
 
         // Check for string "Hello" in the returned response
         EasyMock.verify(mockRequest, mockResponse);
-        Assert.assertTrue(mockWriter.getBuffer().indexOf("Hello World") != -1);
+        Assert.assertTrue(mockWriter.getBuffer().indexOf("Hello Sunny") != -1);
     }
 
     /**
@@ -59,6 +59,6 @@ public class HelloWorldServletTest {
         WebResponse response = sc.getResponse(request);
 
         // Check for string "Hello" in the returned response
-        Assert.assertTrue(response.getText().indexOf("Hello World") != -1);
+        Assert.assertTrue(response.getText().indexOf("Hello Sunny") != -1);
     }
 }
